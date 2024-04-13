@@ -1,0 +1,61 @@
+<!-- Name: Monisha Ranjan
+Student Id : C0914148 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h1>Let's Paint!</h1>
+
+  <!-- Paint Functionality will come under this area  -->
+  <div id="drawingArea">
+    <canvas id="main" width="960" height="500" style="border:1px solid #ccc;">
+      Here is my canvas.
+    </canvas>
+  </div>
+
+  <div id="controls">
+
+    <!-- Clear button which cleans the canvas -->
+    <button id="new" class="btn btn-action">
+      <i class="far fa-file"></i>
+    </button>
+
+     <!-- Erase buttton  -->
+    <button id="erase" class="btn btn-action">
+      <i class="fas fa-eraser"></i>
+    </button>
+
+    <!-- Pens -->
+    <button id="black" class="btn btn-action">
+      <i class="fas fa-paint-brush white"></i>
+    </button>
+    <button id="red" class="btn btn-action">
+      <i class="fas fa-paint-brush white"></i>
+    </button>
+    <button id="blue" class="btn btn-action">
+      <i class="fas fa-paint-brush white"></i>
+    </button>
+    <button id="yellow" class="btn btn-action">
+      <i class="fas fa-paint-brush white"></i>
+    </button>
+
+    <br>
+
+    <!-- Slider to select button size -->
+    Brush size:
+    <input id="slider" type="range" min="2" max="15" step="1" />
+    <span id="brushSize"></span>
+  </div>
+
+  <script src="static/paint.js">
+  </script>
+
+</body>
+</html>
